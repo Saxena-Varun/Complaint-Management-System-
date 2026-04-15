@@ -1,0 +1,13 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database config (optional, but keeping it for now as per plan)
+# admin/include/config.php
+
+# PHP temporary files
+*.tmp
+*.temp

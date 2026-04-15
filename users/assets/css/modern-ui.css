@@ -1,0 +1,120 @@
+/* 
+ MODERN HIGH-TECH DESIGN SYSTEM - NEO CMS
+ Theme: Slate & Deep Indigo
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg-main: #0f172a;
+    --bg-card: rgba(30, 41, 59, 0.7);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --accent-glow: rgba(99, 102, 241, 0.15);
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* HIGH-TECH CARD STYLE */
+.content-panel, .form-panel, .stat-card {
+    background: var(--bg-card) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color) !important;
+    border-radius: 24px !important;
+    padding: 30px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* INPUTS & FORMS - FIX VISIBILITY */
+.form-control {
+    background: rgba(15, 23, 42, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border-radius: 14px !important;
+    padding: 12px 18px !important;
+    height: auto !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-control:focus {
+    background: #1e293b !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.25) !important;
+}
+
+/* FORCING SELECT OPTIONS VISIBILITY */
+select.form-control, select {
+    color: #ffffff !important;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+select option {
+    background: #0f172a !important;
+    color: #ffffff !important;
+    padding: 15px !important;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+    border: none !important;
+    border-radius: 14px !important;
+    padding: 12px 28px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: all 0.4s ease !important;
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.wrapper section {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* SIDEBAR FIX */
+#sidebar {
+    background: #0f172a !important;
+}
+
+#nav-accordion li a {
+    color: var(--text-secondary) !important;
+    transition: all 0.3s ease;
+}
+
+#nav-accordion li a:hover {
+    background: rgba(99, 102, 241, 0.1) !important;
+    color: #fff !important;
+}
