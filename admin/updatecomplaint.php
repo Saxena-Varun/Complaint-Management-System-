@@ -23,7 +23,7 @@ echo "<script>alert('Complaint details updated successfully');</script>";
 function f2()
 {
 window.close();
-}ser
+}
 function f3()
 {
 window.print(); 

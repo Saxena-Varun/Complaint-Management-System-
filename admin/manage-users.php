@@ -89,8 +89,8 @@ while($row=mysql_fetch_array($query))
 										
 											<td><?php echo htmlentities($row['regDate']);?></td>
 
-											<td><a href="javascript:void(0);" onClick="popUpWindow('http://localhost/cms/admin/userprofile.php?uid=<?php echo htmlentities($row['id']);?>');" title="Update order">
-											 <button type="button" class="btn btn-primary">View Detials</button>
+											<td><a href="javascript:void(0);" onClick="popUpWindow('userprofile.php?uid=<?php echo htmlentities($row['id']);?>');" title="View Details">
+											 <button type="button" class="btn btn-primary">View Details</button>
 											</a></td>
 											
 										<?php $cnt=$cnt+1; } ?>
